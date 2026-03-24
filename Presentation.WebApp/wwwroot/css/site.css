@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.app-layout {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100dvh;
+    padding: 1rem;
+}
