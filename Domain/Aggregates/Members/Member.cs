@@ -37,10 +37,8 @@ public class Member
         return member;
     }
 
-    public static Member Rehydrate(string id, string userId, string firstName, string lastName, string? phoneNumber, string? profileImageUri, DateTimeOffset createdAt, DateTimeOffset modifiedAt)
+    public static Member Rehydrate(string id, string userId, string? firstName, string? lastName, string? phoneNumber, string? profileImageUri, DateTimeOffset createdAt, DateTimeOffset? modifiedAt)
     {
-
-
         var member = new Member(id, userId, createdAt)
         {
             FirstName = firstName,
