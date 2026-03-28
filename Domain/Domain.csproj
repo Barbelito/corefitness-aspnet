@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Abstractions\Identity\" />
     <Folder Include="Abstractions\Repositories\Members\" />
-    <Folder Include="Aggregates\Members\" />
   </ItemGroup>
 
 </Project>
