@@ -857,3 +857,111 @@ input[type="checkbox"] {
         max-width: 100%;
     }
 }
+
+/* about me */
+.options-menu {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .options-menu-title {
+        background-color: var(--theme-color);
+        padding: 1rem;
+        font-weight: 600;
+        color: var(--dark-color);
+    }
+
+    .options {
+        list-style: none;
+        padding-inline: 0.5rem;
+        margin: 0;
+
+        .option-title {
+            margin-top: 2rem;
+            padding: 1rem 1rem 0.5rem;
+            font-size: 0.9rem;
+            color: var(--gray-color);
+            border-bottom: 1px solid var(--gray-color);
+
+            &:first-child {
+                margin: 0;
+            }
+        }
+
+        .option-item {
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dark-color);
+            position: relative;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            &:last-child {
+                border: none;
+            }
+
+            &:hover {
+                background-color: var(--theme-color);
+                cursor: pointer;
+            }
+
+            &::after {
+                position: absolute;
+                right: 1.5rem;
+                content: "\f054";
+                font-family: var(--font-fa);
+                font-weight: 900;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+.account-layout {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 1rem;
+    height: 100dvh;
+    padding: 1rem;
+
+    .page-title {
+        margin-top: 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "aside main";
+        gap: 4rem;
+
+        aside {
+            grid-area: aside;
+            display: grid;
+            align-items: start;
+            gap: 1rem;
+        }
+
+        main {
+            grid-area: main;
+
+            h2 {
+                font-size: 1em;
+            }
+        }
+    }
+}
+.about-me {
+    background-color: var(--section-background-color);
+    padding: 1rem 4rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+
+    [data-type="submit"] {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
