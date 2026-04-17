@@ -1,4 +1,5 @@
-﻿using Infrastructure.Extensions.Identity;
+﻿using Application.Extensions;
+using Infrastructure.Extensions.Identity;
 using Infrastructure.Persistence;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,6 +13,7 @@ public static class InfrastructureServiceCollectionRegistrationExtensions
     {
         services.AddPersistence(configuration, environment);
         services.AddIdentityServices();
+        services.AddFaqServices();
         return services;
     }
 }

@@ -1,0 +1,53 @@
+﻿@inject IFaqService faqService
+
+@{
+    var items = faqService.GetFaqItems();
+}
+
+<section class="section__faq">
+    <div class="container">
+
+        <div class="faq-area">
+
+            <img src="~/images/faq-image.png" alt="FAQ image" />
+
+            <div class="title">
+                <div class="section-title">Frequently Asked Questions</div>
+
+                <h2>
+                    Common questions about
+                    gym and training
+                </h2>
+            </div>
+
+            <div class="accordion">
+                @foreach (var faq in items)
+                {
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">
+                            <h6>@faq.Title</h6>
+                        </button>
+                        <hr />
+                        <div class="faq-answer">
+                            <p>@faq.Description</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const items = document.querySelectorAll(".faq-item");
+
+        items.forEach(item => {
+            const button = item.querySelector(".faq-question");
+
+            button.addEventListener("click", () => {
+                item.classList.toggle("active");
+            });
+        });
+    });
+</script>

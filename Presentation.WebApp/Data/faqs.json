@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Q1. Do I need prior gym experience to Join CoreFitness?",
+    "description": "No, CoreFitness is designed for all fitness levels. Our trainers guide beginners with proper techniques and structured workout plans to help them start safely and confidently. Every new member receives a personalized introduction to equipments. Workouts are designed to grow with you, ensuring beginners can start safely."
+  },
+  {
+    "id": 2,
+    "title": "Q2. What facilities are included with the membership?",
+    "description": "Our membership gives you full access to all CoreFitness facilities, including our strength and cardio zones, functional training area, free‑weights section, indoor track, sauna, and relaxation lounge. You also get access to our members‑only locker rooms and complimentary Wi‑Fi."
+  },
+  {
+    "id": 3,
+    "title": "Q3. Can I try the gym before taking a membership?",
+    "description": "Yes! We offer a free trial visit so you can explore the gym, try the equipment, and get a feel for the atmosphere before deciding. Just check in at the front desk with a valid ID."
+  },
+  {
+    "id": 4,
+    "title": "Q4. Are there group workout programs available?",
+    "description": "Absolutely. We offer a wide range of group classes, including HIIT, yoga, spinning, strength circuits, and mobility sessions. All classes are led by certified instructors and included in your membership."
+  },
+  {
+    "id": 5,
+    "title": "Q5. Is nutrition guidance included in the plans?",
+    "description": "Yes, our premium plans include personalized nutrition guidance from our certified coaches. Standard memberships also get access to general nutrition tips and healthy meal suggestions through our app."
+  }
+]
