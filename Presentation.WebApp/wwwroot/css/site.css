@@ -1971,12 +1971,24 @@ input[type="checkbox"]:checked {
     font-weight: 900;
     font-size: 3.5rem;
 }
+@media (max-width: 720px) {
+    .error-404 h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
 
-.error-404 p {
-    margin-bottom: 3rem;
-    color: var(--dark-gray-color);
-}
+    .error-404 p {
+        margin-bottom: 3rem;
+        color: var(--dark-gray-color);
+    }
 
-.error-404 .btn {
-    margin-bottom: 6rem;
-}
+    .error-404 .btn {
+        margin-bottom: 6rem;
+    }
+
+    @media (max-width: 720px) {
+        h1, h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
