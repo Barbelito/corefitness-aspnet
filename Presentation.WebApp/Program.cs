@@ -17,10 +17,16 @@ await PersistenceDatabaseInitializer.InitializeAsync(app.Services, app.Environme
 
 if (!app.Environment.IsDevelopment())
 {
-
+    app.UseExceptionHandler("/error/500");
+    app.UseHsts();
+}
+else
+{
+    app.UseDeveloperExceptionPage();
 }
 
-app.UseHsts();
+app.UseStatusCodePagesWithReExecute("/error/{0}");
+
 app.UseHttpsRedirection();
 app.UseRouting();
 

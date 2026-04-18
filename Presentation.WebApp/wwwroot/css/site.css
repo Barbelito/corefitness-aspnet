@@ -1948,3 +1948,35 @@ input[type="checkbox"]:checked {
         border-radius: 50%;
         background: var(--dark-color);
     }
+
+/* error view */
+.error-404 {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.error-404__image {
+    max-width: 860px;
+    width: 100%;
+    margin: 8rem auto 1.5rem;
+    display: block;
+}
+
+.error-404 h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+.error-404 p {
+    margin-bottom: 3rem;
+    color: var(--dark-gray-color);
+}
+
+.error-404 .btn {
+    margin-bottom: 6rem;
+}
